@@ -10,7 +10,7 @@ export default function Header() {
             
             <div className="w-48 hidden md:block"></div>
 
-            {/* 2. BLOCO CENTRO */}
+            {/* BLOCO CENTRO */}
             <div className='hidden md:flex flex-1 justify-center items-center'>
                 <ul className='flex justify-center items-center gap-8'>
                     <li>
@@ -31,7 +31,7 @@ export default function Header() {
                 </ul>
             </div>
 
-            {/* BLOCO DIREITA*/}
+            {/* BLOCO DIREITA */}
             <div className='w-48 flex justify-end items-center gap-4 ml-auto md:ml-0'>
                 
                 <div className='flex items-center gap-2'>
