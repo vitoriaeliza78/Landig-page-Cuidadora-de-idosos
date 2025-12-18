@@ -1,7 +1,14 @@
-
+import Header from "./components/header";
+import Nav from "./components/nav";
+import Sobre from "./components/sobre";
 
 export default function Home() {
   return (
-    <h1>olá ta funcionando</h1>
+    <main>
+        <Nav/>
+        <Header />
+        <Sobre />
+    </main>
+     
   );
 }

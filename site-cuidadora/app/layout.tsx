@@ -1,5 +1,5 @@
 import "./globals.css";
-import Header  from "./components/header";
+import Nav  from "./components/nav";
 
 
 export default function RootLayout({
@@ -10,7 +10,7 @@ export default function RootLayout({
   return (
     <html lang="pt-br">
       <body>
-        <Header />
+        <Nav />
         {children}
       </body>
     </html>

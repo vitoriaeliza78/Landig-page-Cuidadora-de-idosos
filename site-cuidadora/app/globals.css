@@ -13,6 +13,7 @@
 
 .font-texto {
   font-family: 'Libre Baskerville', serif;
+  font-style: regular;
 }
 
 @theme inline {
