@@ -5,7 +5,7 @@ import { FaWhatsapp } from 'react-icons/fa';
 export default function Nav() {
   return ( 
     <header>
-        <nav className='fixed top-0 left-0 w-full z-50 bg-white/80 backdrop-blur-md shadow-sm'>
+        <nav className='fixed top-0 left-0 w-full z-50 bg-white/40 backdrop-blur-md shadow-sm'>
             <div className='container mx-auto px-2 h-15 flex items-center justify-between'>
                 
                 <div className="w-48 hidden md:block"></div>
