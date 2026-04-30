@@ -1,4 +1,4 @@
-export function Formulario() {
+export default function Formulario() {
   return (
     <section className="bg-[#a8b8b0] py-16 px-6" id="formulario">
       <div className="max-w-3xl mx-auto text-center">

@@ -5,7 +5,7 @@ import { FaWhatsapp } from 'react-icons/fa';
 export default function Nav() {
   return ( 
     <header>
-        <nav className='fixed top-0 left-0 w-full z-50 bg-white/40 backdrop-blur-md shadow-sm'>
+        <nav className='fixed top-0 left-0 w-full z-50 bg-white/40 shadow-sm'>
             <div className='container mx-auto px-2 h-15 flex items-center justify-between'>
                 
                 <div className="w-48 hidden md:block"></div>
@@ -14,19 +14,19 @@ export default function Nav() {
                 <div className='hidden md:flex flex-1 justify-center items-center'>
                     <ul className='flex justify-center items-center gap-8'>
                         <li>
-                            <Link href="#home" className='text-[#122432] font-titulo text-lg transition-colors'>Início</Link>
+                            <Link href="#home" className='text-[#122432] font-titulo text-lg transition-colors hover:text-green-500 transition-all duration-300 hover:scale-105'>Início</Link>
                         </li>
                         <li>
-                            <Link href="#sobre" className='text-[#122432] font-titulo text-lg transition-colors'>Sobre mim</Link>
+                            <Link href="#sobre" className='text-[#122432] font-titulo text-lg hover:text-green-500 transition-all duration-300 hover:scale-105'>Sobre mim</Link>
                         </li>
                         <li>
-                            <Link href="#experiencia" className='text-[#122432] font-titulo text-lg transition-colors'>Experiência</Link>
+                            <Link href="#experiencia" className='text-[#122432] font-titulo text-lg transition-colors hover:text-green-500 transition-all duration-300 hover:scale-105'>Experiência</Link>
                         </li>
                         <li>
-                            <Link href="#formulario" className='text-[#122432] font-titulo text-lg transition-colors'>Formulário</Link>
+                            <Link href="#formulario" className='text-[#122432] font-titulo text-lg transition-colors hover:text-green-500 transition-all duration-300 hover:scale-105'>Formulário</Link>
                         </li>
                         <li>
-                            <Link href="#contato" className='text-[#122432] font-titulo text-lg transition-colors'>Contato</Link>
+                            <Link href="#contato" className='text-[#122432] font-titulo text-lg transition-colors hover:text-green-500'>Contato</Link>
                         </li>
                     </ul>
                 </div>

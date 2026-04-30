@@ -7,7 +7,7 @@ export default function Header() {
     <div className="relative w-full min-h-screen flex items-center pt-24 md:pt-0 overflow-hidden">
       <div className="absolute inset-0 w-full h-full z-0 md:hidden">
         <Image 
-            src="/medica.png" 
+            src="/Fotinha.png" 
             alt="Fundo Mobile" 
             fill 
             className="object-cover object-top"
@@ -44,12 +44,12 @@ export default function Header() {
             </div>
           </div>
 
-          <div className="hidden md:block relative h-[500px] w-full rounded-2xl overflow-hidden">
+          <div className="relative w-full h-[400px] md:h-[500px] flex justify-center items-center bg-gray-50 rounded-3xl overflow-hidden">
             <Image
-              src="/medica.png"
+              src="/Fotinha.png"
               alt="Cuidadora de Idosos"
               fill
-              className="object-cover"
+              className="object-object "
               priority
             />
           </div>
