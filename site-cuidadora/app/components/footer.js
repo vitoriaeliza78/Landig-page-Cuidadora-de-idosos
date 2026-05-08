@@ -1,6 +1,6 @@
 export default function Footer() {
   return (
-    <footer className="bg-white pt-16 flex flex-col">
+    <footer className="bg-white pt-16 flex flex-col" id="contato">
       <div className="max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-10 w-full mb-12">
         {/* Coluna 1 */}
         <div>
@@ -29,8 +29,8 @@ export default function Footer() {
             <li className="flex items-center gap-2">
               <span className="text-green-500">💬</span> (61) 90000-0000
             </li>
-            <li className="flex items-center gap-2">
-              <span>📍</span> Atendimentos Brasília e região
+            <li className="flex font-bold items-center gap-2">
+              <span >📍</span> Atendimentos Brasília e região
             </li>
           </ul>
         </div>

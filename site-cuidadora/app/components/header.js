@@ -4,7 +4,7 @@ import { FaWhatsapp } from "react-icons/fa";
 
 export default function Header() {
   return (
-    <div className="relative w-full min-h-screen flex items-center pt-24 md:pt-0 overflow-hidden">
+    <div className="relative w-full min-h-screen flex items-center pt-24 md:pt-0 overflow-hidden" id="inicio">
       <div className="absolute inset-0 w-full h-full z-0 md:hidden">
         <Image 
             src="/Fotinha.png" 
@@ -44,12 +44,12 @@ export default function Header() {
             </div>
           </div>
 
-          <div className="relative w-full h-[300px] md:hidden flex justify-center items-center bg-gray-50 rounded-3xl overflow-hidden">
+          <div className="relative w-full h-118 hidden md:block justify-center items-center bg-gray-50 rounded-3xl overflow-hidden">
             <Image
               src="/Fotinha.png"
               alt="Cuidadora de Idosos"
               fill
-              className="object-object "
+              className="object-cover"
               priority
             />
           </div>

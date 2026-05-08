@@ -16,6 +16,7 @@ export default function Experiencia() {
                             src="/card-1.png"
                             width={50}
                             height={50}
+                            alt="sondas"
                             className="lg:w-18"
                         />
                         
@@ -35,6 +36,7 @@ export default function Experiencia() {
                             src="/card-2.png"
                             width={50}
                             height={50}
+                            alt="saúde mental"
                             className="lg:w-18"
                         />
                         
@@ -54,14 +56,15 @@ export default function Experiencia() {
                             src="/card-3.png"
                             width={50}
                             height={50}
+                            alt="Cuidados com a Higiene Pessoal"
                             className="lg:w-18"
                         />
                     </div>
                     <h2 className="text-[#122432] font-texto text-xl font-bold">
-                        Cuidados com a Higiene Pessoal
+                        Cuidados com Acamados
                     </h2>
                     <p>
-                        Experiência em auxiliar no cuidado diário com higiene pessoal, incluindo banho, escovação de dentes e cuidados com a pele, promovendo conforto e bem-estar.
+                        Atenção humanizada para acamados, focando em prevenção de escaras, higiene minuciosa e conforto para manutenção da saúde.
                     </p>
                 </div>
 
@@ -72,6 +75,7 @@ export default function Experiencia() {
                             src="/card-4.png"
                             width={50}
                             height={50}
+                            alt="Cuidados com a Higiene Pessoal"
                             className="lg:w-18"
                         />
                     </div>

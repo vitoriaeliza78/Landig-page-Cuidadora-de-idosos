@@ -1,8 +1,15 @@
+"use client";
+
+import {useState} from 'react';
 import Link from 'next/link';
-import {Menu }  from 'lucide-react';
+import {Menu, X}  from 'lucide-react';
 import { FaWhatsapp } from 'react-icons/fa';
 
 export default function Nav() {
+  const [menuAberto, setMenuAberto] = useState(false);
+
+  const fecharMenu = () => setMenuAberto(false);
+
   return ( 
     <header>
         <nav className='fixed top-0 left-0 w-full z-50 bg-white/40 shadow-sm'>
@@ -14,7 +21,7 @@ export default function Nav() {
                 <div className='hidden md:flex flex-1 justify-center items-center'>
                     <ul className='flex justify-center items-center gap-8'>
                         <li>
-                            <Link href="#home" className='text-[#122432] font-titulo text-lg transition-colors hover:text-green-500 transition-all duration-300 hover:scale-105'>Início</Link>
+                            <Link href="#inicio" className='text-[#122432] font-titulo text-lg transition-colors hover:text-green-500 transition-all duration-300 hover:scale-105'>Início</Link>
                         </li>
                         <li>
                             <Link href="#sobre" className='text-[#122432] font-titulo text-lg hover:text-green-500 transition-all duration-300 hover:scale-105'>Sobre mim</Link>
@@ -34,21 +41,46 @@ export default function Nav() {
                 {/* BLOCO DIREITA */}
                 <div className='w-48 flex justify-end items-center gap-4 ml-auto md:ml-0'>
                     
-                    <div>
-                        
-                        <Link href="#orcamento" className='bg-green-600 rounded-full flex items-center gap-2 text-white px-8 py-2 font-bold hover:bg-green-700 transition shadow-md text-sm'>
-                            <FaWhatsapp/>
-                            ORÇAMENTO
-                        </Link>
+                    {/* O botão do WhatsApp fica escondido no mobile bem pequeno para não encavalar, ou você pode deixar */}
+                    <div className='hidden sm:block'> 
+                    <Link href="#orcamento" className='bg-green-600 rounded-full flex items-center gap-2 text-white px-6 py-2 font-bold hover:bg-green-700 transition shadow-md text-sm'>
+                        <FaWhatsapp size={18}/>
+                        ORÇAMENTO
+                    </Link>
                     </div>
 
-                    {/* Botão Hamburguer */}
-                    <button className='md:hidden text-[#122432]'>
-                        <Menu size={32} />
+                    {/* Botão Hambúrguer / Fechar */}
+                    <button 
+                    className='md:hidden text-[#122432] focus:outline-none'
+                    onClick={() => setMenuAberto(!menuAberto)}
+                    >
+                    {/* Se o menu estiver aberto, mostra o X, senão, mostra o Menu */}
+                    {menuAberto ? <X size={32} /> : <Menu size={32} />}
                     </button>
                 </div>
-            </div>
-        </nav>
+                </div>
+
+                {/* --- MENU MOBILE --- */}
+                {menuAberto && (
+                <div className="md:hidden absolute top-full left-0 w-full bg-white shadow-lg border-t border-gray-100 flex flex-col items-center py-6 gap-6 transition-all">
+                    <Link href="#inicio" onClick={fecharMenu} className='text-[#122432] font-titulo text-xl font-medium hover:text-green-500'>
+                    Início
+                    </Link>
+                    <Link href="#sobre" onClick={fecharMenu} className='text-[#122432] font-titulo text-xl font-medium hover:text-green-500'>
+                    Sobre mim
+                    </Link>
+                    <Link href="#experiencia" onClick={fecharMenu} className='text-[#122432] font-titulo text-xl font-medium hover:text-green-500'>
+                    Experiência
+                    </Link>
+                    <Link href="#formulario" onClick={fecharMenu} className='text-[#122432] font-titulo text-xl font-medium hover:text-green-500'>
+                    Formulário
+                    </Link>
+                    <Link href="#contato" onClick={fecharMenu} className='text-[#122432] font-titulo text-xl font-medium hover:text-green-500'>
+                    Contato
+                    </Link>
+                </div>
+        )}
+      </nav>
     </header>
   );
 }
