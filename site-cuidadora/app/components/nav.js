@@ -15,10 +15,10 @@ export default function Nav() {
         <nav className='fixed top-0 left-0 w-full z-50 bg-white/40 shadow-sm'>
             <div className='container mx-auto px-2 h-15 flex items-center justify-between'>
                 
-                <div className="w-48 hidden md:block"></div>
+                <div className="w-48 hidden lg:block"></div>
 
                 {/* BLOCO CENTRO */}
-                <div className='hidden md:flex flex-1 justify-center items-center'>
+                <div className='hidden lg:flex flex-1 justify-center items-center'>
                     <ul className='flex justify-center items-center gap-8'>
                         <li>
                             <Link href="#inicio" className='text-[#122432] font-titulo text-lg transition-colors hover:text-green-500 transition-all duration-300 hover:scale-105'>Início</Link>
@@ -66,7 +66,7 @@ export default function Nav() {
 
                 {/* --- MENU MOBILE --- */}
                 {menuAberto && (
-                <div className="md:hidden absolute top-full left-0 w-full bg-white shadow-lg border-t border-gray-100 flex flex-col items-center py-6 gap-6 transition-all">
+                <div className="lg:hidden absolute top-full left-0 w-full bg-white shadow-lg border-t border-gray-100 flex flex-col items-center py-6 gap-6 transition-all">
                     <Link href="#inicio" onClick={fecharMenu} className='text-[#122432] font-titulo text-xl font-medium hover:text-green-500'>
                     Início
                     </Link>

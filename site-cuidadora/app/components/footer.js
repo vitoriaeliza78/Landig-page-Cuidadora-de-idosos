@@ -29,7 +29,9 @@ export default function Footer() {
             <li className="flex items-center gap-3">
               <Mail className="text-gray-700" size={24} />
               <a 
-               href="mailto:nevesalessandra400@gmail.com"
+               href="https://mail.google.com/mail/?view=cm&fs=1&to=nevesalessandra400@gmail.com"
+               target='_blank'
+               rel='noopener noreferrer'
                className="hover:text-green-500 transition-colors cursor-pointer">
                 nevesalessandra400@gmail.com
               </a>

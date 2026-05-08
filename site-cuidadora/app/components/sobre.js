@@ -6,7 +6,7 @@ export default function Sobre() {
             <div className="container mx-auto w-full h-full">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
 
-                    <div>
+                    <div className="hidden md:block">
                         <Image
                             src="/segurandoMao.png"
                             alt="Sobre Mim"
