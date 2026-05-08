@@ -15,7 +15,7 @@ export default function Sobre() {
                         />
                     </div>
 
-                    <div className="flex flex-col justify-center px-8">
+                    <div className="flex flex-col justify-center px-8" data-aos="zoom-in-left">
                         <h1 className="font-texto text-4xl md:text-5xl text-[#122432] text-start pt-13 pb-2">Muito prazer, sou<br/> <strong className="text-white">Alessandra Peixoto.</strong></h1>
                         <h2 className="font-texto text-2xl md:text-2xl text-[#122432] text-start">Mais de 8 anos dedicados a cuidar de vidas com técnica e coração.</h2>
                         <p className="font-sans regular font-medium sans-serif text-md md:text-md text-[#122432] text-start pt-3 pb-3">Sou cuidadora profissional com certificação e, atualmente, estou cursando Técnico em Enfermagem, unindo o carinho do cuidado diário com conhecimento técnico.</p>

@@ -19,34 +19,33 @@ export default function Header() {
       <div className="container mx-auto px-8 relative z-10">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
           
-          <div className="flex flex-col gap-6">
+          <div className="flex flex-col gap-6 " data-aos="fade-right">
+              <h1 className="font-texto text-4xl md:text-6xl text-center md:text-left text-white md:text-[#122432] ">
+                A tranquilidade de saber que quem você ama
+                <br className="hidden md:block" /> está em boas mãos.
+              </h1>
 
-            <h1 className="font-texto text-4xl md:text-6xl text-center md:text-left text-white md:text-[#122432] ">
-              A tranquilidade de saber que quem você ama
-              <br className="hidden md:block" /> está em boas mãos.
-            </h1>
-
-            {/* SUBTÍTULO */}
-            <p className="text-center md:text-left text-xl text-white md:text-[#122432]">
-              Cuidado especializado para idosos em Brasília e região. <br className="hidden md:block text-[#122432]"/>
-              Atendimento domiciliar e hospitalar com experiência em <br className="hidden md:block text-[#122432]"/>
-              <strong>Alzheimer, Parkinson e Sondas (GTT).</strong>
-            </p>
-
-            <div className="flex justify-center md:justify-start">
-              <Link
-                href="https://wa.me/5561981777634?text=Olá, Alessandra! Vim pelo seu site e gostaria de solicitar um orçamento para os serviços de cuidadora. Poderia me passar mais informações?"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="bg-green-600 rounded-full flex items-center gap-2 text-white px-8 py-3 font-bold hover:bg-green-700 transition shadow-md text-sm hover:scale-105 transform duration-200"
-              >
-                <FaWhatsapp size={20} />
-                CHAMAR NO WHATSAPP
-              </Link>
-            </div>
+              {/* SUBTÍTULO */}
+              <p className="text-center md:text-left text-xl text-white md:text-[#122432]">
+                Cuidado especializado para idosos em Brasília e região. <br className="hidden md:block text-[#122432]"/>
+                Atendimento domiciliar e hospitalar com experiência em <br className="hidden md:block text-[#122432]"/>
+                <strong>Alzheimer, Parkinson e Sondas (GTT).</strong>
+              </p>
+            
+              <div className="flex justify-center md:justify-start" data-aos="zoom-in">
+                <Link
+                  href="https://wa.me/5561981777634?text=Olá, Alessandra! Vim pelo seu site e gostaria de solicitar um orçamento para os serviços de cuidadora. Poderia me passar mais informações?"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="bg-green-600 rounded-full flex items-center gap-2 text-white px-8 py-3 font-bold hover:bg-green-700 transition shadow-md text-sm hover:scale-105 transform duration-200"
+                >
+                  <FaWhatsapp size={20} />
+                  CHAMAR NO WHATSAPP
+                </Link>
+              </div>
           </div>
 
-          <div className="relative w-full h-118 hidden md:block justify-center items-center bg-gray-50 rounded-3xl overflow-hidden">
+          <div data-aos="fade-left" className="relative w-full h-118 hidden md:block justify-center items-center bg-gray-50 rounded-3xl overflow-hidden">
             <Image
               src="/Fotinha.png"
               alt="Cuidadora de Idosos"

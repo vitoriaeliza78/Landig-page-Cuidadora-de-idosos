@@ -10,7 +10,7 @@ export default function Experiencia() {
             </div>
             <div className="container mx-auto w-full h-full grid grid-cols-1 md:grid-cols-2 gap-6 px-3 pb-10">
                 {/* Card 1 */}
-                <div className="bg-white px-3 py-10 flex flex-col justify-center items-center text-center rounded-2xl lg:w-xl gap-3">
+                <div data-aos="zoom-in-right" className="bg-white px-3 py-10 flex flex-col justify-center items-center text-center rounded-2xl lg:w-xl gap-3">
                     <div>
                         <Image
                             src="/card-1.png"
@@ -30,7 +30,7 @@ export default function Experiencia() {
                 </div>
                 {/* Card 2 */}
 
-                <div className="bg-white px-3 py-6 flex flex-col justify-center items-center text-center rounded-2xl lg:w-xl gap-3">
+                <div className="bg-white px-3 py-6 flex flex-col justify-center items-center text-center rounded-2xl lg:w-xl gap-3" data-aos="zoom-in-left">
                     <div>
                         <Image
                             src="/card-2.png"
@@ -41,7 +41,7 @@ export default function Experiencia() {
                         />
                         
                     </div>
-                    <h2 className="text-[#122432] font-texto text-xl font-bold">
+                    <h2 className="text-[#122432] font-texto text-xl font-bold" >
                         Especialista em Saúde Mental
                     </h2>
                     <p>
@@ -50,7 +50,7 @@ export default function Experiencia() {
                 </div>
 
                 {/* Card 3 */}
-                <div className="bg-white px-3 py-6 flex flex-col justify-center items-center text-center rounded-2xl lg:w-xl gap-3">
+                <div data-aos="zoom-in-right" className="bg-white px-3 py-6 flex flex-col justify-center items-center text-center rounded-2xl lg:w-xl gap-3">
                     <div>
                         <Image
                             src="/card-3.png"
@@ -69,7 +69,7 @@ export default function Experiencia() {
                 </div>
 
                 {/* Card 4 */}
-                <div className="bg-white px-3 py-6 flex flex-col justify-center items-center text-center rounded-2xl lg:w-xl gap-3">
+                <div className="bg-white px-3 py-6 flex flex-col justify-center items-center text-center rounded-2xl lg:w-xl gap-3" data-aos="zoom-in-left">
                     <div>
                         <Image
                             src="/card-4.png"

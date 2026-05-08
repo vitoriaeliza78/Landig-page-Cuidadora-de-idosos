@@ -1,5 +1,6 @@
 import "./globals.css";
 import Nav  from "./components/nav";
+import AosInit from "./components/AosInit";
 
 export const metadata = {
   title: 'Alessandra Peixoto | Cuidadora de Idosos em Brasília',
@@ -30,6 +31,7 @@ export default function RootLayout({ children }) {
     <html lang="pt-br">
       <body>
         <Nav />
+        <AosInit />
         {children}
       </body>
     </html>
