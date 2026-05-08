@@ -35,7 +35,9 @@ export default function Header() {
 
             <div className="flex justify-center md:justify-start">
               <Link
-                href="#"
+                href="https://wa.me/5561981777634?text=Olá, Alessandra! Vim pelo seu site e gostaria de solicitar um orçamento para os serviços de cuidadora. Poderia me passar mais informações?"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="bg-green-600 rounded-full flex items-center gap-2 text-white px-8 py-3 font-bold hover:bg-green-700 transition shadow-md text-sm hover:scale-105 transform duration-200"
               >
                 <FaWhatsapp size={20} />

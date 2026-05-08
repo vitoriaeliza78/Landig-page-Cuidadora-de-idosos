@@ -43,7 +43,11 @@ export default function Nav() {
                     
                     {/* O botão do WhatsApp fica escondido no mobile bem pequeno para não encavalar, ou você pode deixar */}
                     <div className='hidden sm:block'> 
-                    <Link href="#orcamento" className='bg-green-600 rounded-full flex items-center gap-2 text-white px-6 py-2 font-bold hover:bg-green-700 transition shadow-md text-sm'>
+                    <Link 
+                        href="https://wa.me/5561981777634?text=Olá, Alessandra! Vim pelo seu site e gostaria de solicitar um orçamento para os serviços de cuidadora. Poderia me passar mais informações?"
+                        target="_blank"
+                        rel="noopener noreferrer" 
+                        className='bg-green-600 rounded-full flex items-center gap-2 text-white px-6 py-2 font-bold hover:bg-green-700 transition shadow-md text-sm'>
                         <FaWhatsapp size={18}/>
                         ORÇAMENTO
                     </Link>

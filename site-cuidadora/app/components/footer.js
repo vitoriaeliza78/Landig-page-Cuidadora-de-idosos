@@ -1,11 +1,13 @@
+import { Mail, MessageSquare, MapPin } from 'lucide-react';
+
 export default function Footer() {
   return (
     <footer className="bg-white pt-16 flex flex-col" id="contato">
       <div className="max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-10 w-full mb-12">
         {/* Coluna 1 */}
         <div>
-          <h3 className="font-bold text-xl text-[#1a2634] tracking-widest uppercase">CUIDADORA</h3>
-          <p className="text-lg text-gray-800 font-serif">Alessandra Peixoto</p>
+          <h3 className="font-texto font-bold text-4xl text-[#1a2634]">CUIDADORA</h3>
+          <p className="font-texto text-xl text-gray-800">Alessandra Peixoto</p>
         </div>
 
         {/* Coluna 2*/}
@@ -23,14 +25,31 @@ export default function Footer() {
         <div>
           <h4 className="font-bold text-[#1a2634] mb-4 text-lg">Contato</h4>
           <ul className="space-y-4 text-gray-600">
-            <li className="flex items-center gap-2">
-              <span>📧</span> nevesalessandra400@gmail.com
+
+            <li className="flex items-center gap-3">
+              <Mail className="text-gray-700" size={24} />
+              <a 
+               href="mailto:nevesalessandra400@gmail.com"
+               className="hover:text-green-500 transition-colors cursor-pointer">
+                nevesalessandra400@gmail.com
+              </a>
             </li>
-            <li className="flex items-center gap-2">
-              <span className="text-green-500">💬</span> (61) 90000-0000
+            
+            <li className="flex items-center gap-3">
+              <MessageSquare className="text-gray-700 font-bold" size={24} />
+              <a
+               href='https://wa.me/5561981777634?text=Olá, Alessandra! Vim pelo seu site e gostaria de mais informações.'
+               target='_blank'
+               rel='noopener noreferrer'
+               className="hover:text-green-500 transition-colors cursor-pointer"
+              >
+                <span >(61) 98177-7634</span>
+              </a>
             </li>
-            <li className="flex font-bold items-center gap-2">
-              <span >📍</span> Atendimentos Brasília e região
+            
+            <li className="flex items-center gap-3 text-[#1a2634] font-semibold">
+              <MapPin className="text-green-500" size={24} />
+              <span>Atendimentos Brasília e região</span>
             </li>
           </ul>
         </div>
