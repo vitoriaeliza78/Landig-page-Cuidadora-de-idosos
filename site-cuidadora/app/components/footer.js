@@ -59,7 +59,7 @@ export default function Footer() {
 
       {/* Faixa de Copyright */}
       <div className="w-full bg-[#a8b8b0] py-4 text-center text-[#1a2634] font-medium text-sm mt-auto">
-        Desenvolvido por Vitória Elizangela © 2025
+        Desenvolvido por Vitória Elizangela © 2026
       </div>
     </footer>
   );

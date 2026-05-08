@@ -6,7 +6,7 @@ export default function Formulario() {
           Formulário
         </h2>
         <p className="text-[#1a2634] mb-10 text-lg">
-          Sinta-se à vontade. Por favor, descreva com detalhes o paciente para que eu possa retornar com um orçamento.
+          Sinta-se à vontade. Por favor, descreva com detalhes do <strong className="text-green-500 bg-amber-50 p-1.5 rounded-3xl">paciente</strong> para que eu possa retornar para a família.
         </p>
 
         <form 
@@ -59,7 +59,8 @@ export default function Formulario() {
           </div>
           
           <button 
-            type="submit" 
+            type="submit"
+            formTarget="_blank" 
             className="mt-4 bg-[#21c55e] hover:bg-green-600 text-white font-bold py-3 px-6 rounded-full transition-colors self-center w-full md:w-auto"
           >
             Enviar Mensagem
