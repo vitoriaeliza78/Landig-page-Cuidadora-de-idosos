@@ -44,7 +44,7 @@ export default function Header() {
             </div>
           </div>
 
-          <div className="relative w-full h-[400px] md:h-[500px] flex justify-center items-center bg-gray-50 rounded-3xl overflow-hidden">
+          <div className="relative w-full h-[300px] md:hidden flex justify-center items-center bg-gray-50 rounded-3xl overflow-hidden">
             <Image
               src="/Fotinha.png"
               alt="Cuidadora de Idosos"
